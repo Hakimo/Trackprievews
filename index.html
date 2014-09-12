@@ -1,9 +1,4 @@
 
-<!------------------------------------
-CSS
--------------------------------------!>
-
-<doctype=CSS>
 <style type='text/css'>
 @font-face {
 	font-family: Marker_Felt;
@@ -39,95 +34,30 @@ a:visited {color: #FFFFFF; text-decoration: none; }
 a:hover {color: #167c11; text-decoration: none; }
 </style>
 
-<!------------------------------------
-Redirect user if not running Chrome or Firefox
-Lol.... n00bs
---------------------------------------!>
-<script type="text/javascript">
-var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
-if (is_chrome || /Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent)){ //test for MSIE x.x;
-}
-else {
-alert('Come back with Chrome or Firefox n00b\nhttp://p0wersurge.com');
-window.location = 'http://p0wersurge.com';
-}
-</script>
-
-<!------------------------------------
-Start dancing cat animation, title,
-favicon, logo, and song.
--------------------------------------!>
-<title>TeamPS 0wned You!</title>
-<link rel="shortcut icon" href="http://dl.dropbox.com/u/48005575/hat_favicon.ico">
-<body onLoad="animate()">
-<div id='logo'>
-<img src='http://www.p0wersurge.com/testlogo.png'><br>
-<center>
-<b>
-0wned by: Plum & JB<br>
-TeamPS is back in action!<br>
-Join p0wersurge for more database dumps and content!<br>
-Shoutouts: KrypTiK, Paiman, Dante, Vox, AunstiC,<br>
-Prox, and the rest of p0wersurge.com!<br>
-<a href='http://p0wersurge.com'>http://p0wersurge.com</a>
-</b>
-</center>
-</div>
-<audio controls="" loop="loop" autoplay="autoplay" hidden="hidden">
-  <source src="http://p0wersurge.com/music/OVERWERK_Daybreak.mp3" type="audio/mpeg" />
-  <source src="http://p0wersurge.com/music/OVERWERK_Daybreak.ogg" type="audio/ogg">
-</audio>
-
-<!------------------------------------
-XBOX Achievement Stuff
--------------------------------------!>
-
-<script type="text/javascript">
-function remove (){
- document.getElementById("xbox").innerHTML=" ";
-}
-setInterval(function(){remove();}, 5000);
-</script>
-<div id="xbox">
-<embed
-   src="http://p0wersurge.com/js/achievementnopic.swf" 
-   width="300"
-   height="80"
-   flashvars="Text=0wned%20By%20TeamPS!&gs=1337&lights=1&img=&dir="
-   wmode="transparent"
-/>
-</div>
-
-<!------------------------------------
-Javascript Stuff For Cat
--------------------------------------!>
-
-<script language=JavaScript type=text/javascript><!--// Method-5 animation script (compressed)
-
-/***** initialize global film variables ******/
-var frames = 31; // <---- total number of pictures in film
-var delay = 90; // <---- delay after each frame
-var color = "#FF0000"; // <---- Color of cat
-var changecol = true; // <---- Randomly change color of cat? If true the cat will change colors if false the color of the cat will be the value of the color variable.
-var move_cat = true; // <---- Move cat? If true the cat will move side to side. If false the cat will stay in one place.
-var cat_fontsize = 10; // <---- In pixels
-
-/***** initialize anim screen position (in pixels) *****/
-
-var topp = 50; // <---- window position bottom
-var left = (move_cat)?-20:-10; // <---- window position left
-var width = 300; // <---- window width
-var height = 187; // <---- window height
 
 
-/***** initialize anim control variables *****/
+<script language=JavaScript type=text/javascript><!--
 
-var posi = 0; // <---- actual picture position (frame counter)
-var prev = 1; // <---- previous picture number
-var run = true; // <---- boolean : true (?????) or !true (?????)
+var frames = 31; 
+var delay = 90; 
+var color = "#FF0000"; 
+var changecol = true; 
+var move_cat = true; 
+var cat_fontsize = 10; 
 
 
-/***** initialize style sheets ****/
+var topp = 50;
+var left = (move_cat)?-20:-10;
+var width = 300; 
+var height = 187;
+
+
+
+var posi = 0; 
+var prev = 1; 
+var run = true; 
+
+
 
 document.write("<" + "style type='text/css'><" + "!-- ");
 for (i = 0; i <= frames; i++) {
@@ -138,7 +68,6 @@ for (i = 0; i <= frames; i++) {
 }
 document.write("--" + "><" + "/style>");
 
-/******* animation module ******/
 function change_color() {
     var colors = new Array("#6C2DC7", "#00FFFF", "#00FF00", "#FFFF00", "#FF0000", "#FF00FF", "#1589FF", "#8D38C9", "#E3319D", "#6C2DC7", "#7E354D", "#736AFF", "#306754", "#E45E9D", "#000099", "#33CC00", "#25A0C5");
     var randomnum = Math.floor(Math.random() * 17)
